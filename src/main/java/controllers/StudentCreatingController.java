@@ -7,10 +7,10 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet(name = "StudentModController", urlPatterns = "/mod")
-public class StudentModController extends HttpServlet {
+@WebServlet(name = "StudentCreatingController", urlPatterns = "/create-student")
+public class StudentCreatingController extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        req.getRequestDispatcher("/WEB-INF/jsp/mod.jsp").forward(req, resp);
+        req.getRequestDispatcher("/WEB-INF/jsp/create.jsp").forward(req, resp);
     }
 }
