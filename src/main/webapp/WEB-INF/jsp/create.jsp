@@ -17,15 +17,15 @@
 <br>
 <form>
     <p>Для создания студента заполните все поля и нажмите кнопуку "Создать"</p>
-    <p>Имя: <input name="name" required></p>
+    <p>Имя: <input name="text" required></p>
     <br>
-    <p>Фамилия: <input type="email" name="email" required></p>
+    <p>Фамилия: <input type="text"  required></p>
     <br>
-    <p>Группа: <input type="url" name="site" required></p>
+    <p>Группа: <input type="text"  required></p>
     <br>
-    <p>Дата поступления: <input type="url" name="site" required></p>
+    <p>Дата поступления: <input type="date"  required></p>
 </form>
 <br>
-    <button type="submit">Создать студента</button>
+    <button type="submit">Создать</button>
 </body>
 </html>
