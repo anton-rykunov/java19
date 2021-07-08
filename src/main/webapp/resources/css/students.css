@@ -1,0 +1,93 @@
+body {
+    display: block;
+    background-color: #a29d9d;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.first {
+    text-align: center;
+    background-color: khaki;
+    font-size: 18px;
+    background-position: center;
+    background-size: cover;
+}
+
+.second {
+    display: flex;
+    justify-content: center;
+
+}
+.third{
+    display: flex;
+    justify-content: center;
+}
+
+.left-side {
+    float: left;
+    width: 200px;
+    margin-top: 30px;
+    margin-right: 0px;
+}
+
+.midle-side {
+    float: left;
+    text-align: center;
+    width: 400px;
+    max-width: 90%;
+    margin-top: 20px;
+    margin-right: 4px;
+}
+.entry-midle-side{
+    position: absolute;
+    text-align: center;
+}
+
+.right-side {
+    float: left;
+    width: 200px;
+    margin-top: 30px;
+    margin-right: 0px;
+}
+.btn{
+    height: 30px;
+    width: 350px;
+    text-align: center;
+}
+h3{
+    text-align: left;
+
+}
+
+table {
+    width: 350px; /* Ширина таблицы */
+    border: 1px solid black; /* Рамка вокруг таблицы */
+    border-bottom: none; /* Убираем линию снизу */
+    border-collapse: collapse;
+
+}
+.student-table{
+    width: 80%; /* Ширина таблицы */
+    border: 1px solid black; /* Рамка вокруг таблицы */
+    border-bottom: none; /* Убираем линию снизу */
+    border-collapse: collapse;
+}
+td, th {
+    padding: 3px; /* Поля вокруг содержимого ячеек */
+    height: 50px;
+}
+th {
+    font-size: 24px;
+    text-align: left; /* Выравнивание по левому краю */
+    background: #ee9f4f; /* Цвет фона */
+    color: black; /* Цвет текста */
+    border: 1px solid black; /* Рамка вокруг ячеек */
+}
+td {
+    font-size: 20px;
+    border-bottom: 1px solid black; /* Линия снизу */
+    border: 1px solid black;
+}
+
+
+

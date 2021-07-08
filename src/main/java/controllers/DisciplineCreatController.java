@@ -1,5 +1,7 @@
 package controllers;
 
+import database.DBManager;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -17,6 +19,12 @@ req.getRequestDispatcher("WEB-INF/jsp/disciplines-creat.jsp").forward(req, resp)
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
        String disc = req.getParameter("newDisc");
-
+       if(disc == null || disc.equals("")){
+           req.setAttribute("message", "error");
+           req.getRequestDispatcher("WEB-INF/jsp/disciplines-creat.jsp").forward(req, resp);
+           return;
+       }
+        DBManager.creatNewDiscipline(disc);
+        resp.sendRedirect("/disciplines");
     }
 }

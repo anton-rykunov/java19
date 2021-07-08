@@ -11,6 +11,17 @@ import java.io.IOException;
 public class TermsController extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        resp.getWriter().print("<h1>Terms page</h1>");
+       Object count = req.getSession().getServletContext().getAttribute("countTerms");
+        if(count == null){
+            req.getSession().getServletContext().setAttribute("countTerms", "1");
+        }
+        else {
+           Object value = req.getSession().getServletContext().getAttribute("countTerms");
+           int v = Integer.parseInt(value.toString());
+           v++;
+            req.getSession().getServletContext().setAttribute("countTerms", v);
+        }
+
+        resp.getWriter().print("<h1>Terms page</h1>" + req.getSession().getServletContext().getAttribute("countTerms"));
     }
 }
